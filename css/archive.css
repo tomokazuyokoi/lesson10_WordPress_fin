@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+.pagenav_wrap{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+}
+.pages{
+    display: none;
+}
+.wp-pagenavi span.current{
+    border: none;
+}

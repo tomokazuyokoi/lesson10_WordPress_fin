@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+.work-block img{
+    margin: 0;
+    width: 100%;
+}
+.work-block{
+    display: flex;
+    margin-bottom: 64px;
+}
+.work-block section{
+    width: 40.964%;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* JavaScriptで使用 */
+    /* opacity: 0; */
+}
+/* マウスホバー時に暗くする */
+.work-block section::after{
+    position: absolute;
+    /* セレクタの領域を左右上下に最大まで広げる */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: ' ';
+    /* h3タグより下にする */
+    z-index: 1;
+    transition: all 0.8s 0s ease-in-out;
+}
+.work-block section:hover::after{
+    background: rgba(0,0,0,0.8);
+}
+.grapihc{
+    background: url(../img/about/work01.png) no-repeat center center;
+    background-size: cover;
+}
+.signage-vr{
+    background: url(../img/about/work02.png) no-repeat center center;
+    background-size: cover;
+}
+.ui-ux{
+    background: url(../img/about/work03.png) no-repeat center center;
+    background-size: cover;
+}
+.work-block h4{
+    font-size: 36px;
+    font-family: "Montserrat";
+    color: #ffffff;
+    text-shadow: 3px 3px 2px rgba(0,0,0,0.16);
+    position: relative;
+    z-index: 10;
+}
+
+/*=================================
+/*    media 768px
+/*===============================*/
+@media (max-width: 768px){
+    main img{
+        width:100%;
+        margin: 60px auto;
+    }
+    .work-block{
+        display: block;
+    }
+    .work-block section{
+        width: 100%;
+        height: 100.533vw;
+        margin-bottom: 16px;
+    }
+}

@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+main.row_area{
+    width: 640px;
+}
+form{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.form-group{
+    margin-bottom: 32px;
+}
+.form-group:last-of-type{
+    margin-bottom: 64px;
+}
+.form-group label{
+    width: 35%;
+}
+.btn{
+    width: 240px;
+    height: 44px;
+    margin: 0 auto;
+    display: block;
+}
+.your-message{
+    width: 69%;
+}
+
+/*=================================
+/*    media 768px
+/*===============================*/
+@media (max-width: 768px){
+    main.row_area{
+        width: 94%;
+        margin: 0 auto 60px;
+    }
+    .form-group{
+        display: block;
+        margin-bottom: 24px;
+    }
+    .form-group:last-of-type{
+        margin-bottom: 36px;
+    }
+    .btn{
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+}

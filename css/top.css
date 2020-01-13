@@ -1,0 +1,240 @@
+@charset "utf-8";
+
+/*    .title
+----------------------------------*/
+.title{
+    height: auto;
+    background: #fff;
+    display: block;
+    padding: 0;
+    position: relative;
+    margin-bottom: 0;
+}
+.title .slide_list{
+    margin-bottom: 0;
+    position: relative;
+    width: 100vw;
+    height: 45vw;
+    overflow: hidden;
+}
+.title .slide_list li{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    -webkit-transition: all 600ms;
+    transition: all 600ms;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    width: 100%;
+    /* height: 340px; */
+}
+.title .slide_list li.show{
+    opacity: 1;
+}
+.title .slide_list li img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+.title h2{
+    text-align: center;
+    font-size: 28px;
+    color: #fff;
+    padding-bottom: 40px;
+}
+.dot{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 16px;
+    left: 0;
+    right: 0;
+}
+.dot li{
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+.dot li:last-of-type{
+    margin-right: 0;
+}
+.dot li.current{
+    background: #0a427b;
+}
+
+/*    .update
+----------------------------------*/
+.update{
+    background: rgb(242, 242, 242);
+    overflow: hidden;
+}
+.update .row_area{
+    position: relative;
+    padding: 100px 0;
+}
+.update h2{
+    text-align: center;
+    font-family: "Montserrat";
+    margin-bottom: 48px;
+}
+.btn_archive{
+    width: 345px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 0;
+    border: 1px solid #aaa;
+    background: #fff;
+}
+.btn{
+    padding: 0;
+}
+.btn_archive a{
+    display: block;
+    padding: .375rem .75rem;
+}
+.btn_archive a:hover{
+    text-decoration: none;
+}
+
+
+
+/*=================================
+/*    media 1078px
+/*===============================*/
+@media (max-width: 1078px){
+    .approach li a {
+        justify-content: flex-end;
+        padding-right: 1em;
+    }
+}
+
+/*=================================
+/*    media 767px
+/*===============================*/
+@media (max-width: 767px){
+    /*    .title
+    ----------------------------------*/
+    h1{
+        width: 50px;
+        top: -3px;
+    }
+    .title .slide_list{
+        /* margin-bottom: 24px; */
+    }
+    .title h2{
+        font-size: 14px;
+        padding-bottom: 24px;
+    }
+    .dot{
+        margin-bottom: 0;
+        bottom: 16px;
+    }
+    .dot li{
+        width: 12px;
+        height: 12px;
+        margin-right: 8px;
+    }
+
+    /*    .approach
+    ----------------------------------*/
+    .approach{
+        padding-bottom: 40px;
+    }
+    .approach h2{
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+    .approach li a{
+        height: 125px;
+        text-align: left;
+        font-size: 12px;
+        justify-content: flex-end;
+        -ms-align-items: flex-end;
+    }
+    .approach li a p{
+        margin-right: 2%;
+        margin-bottom: 0;
+    }
+    .approach li a:hover{
+        text-decoration: none;
+    }
+
+    /*    .update
+    ----------------------------------*/
+    .update .row_area{
+        padding: 60px 0;
+    }
+    .update h2 img{
+        width: 100%;
+        height: auto;
+    }
+    .btn_archive{
+        width: 60%;
+    }
+
+    /*    .other
+    ----------------------------------*/
+    .other img{
+        width: 100%;
+        height: auto;
+    }
+    .other .row_area{
+        padding: 60px 0;
+    }
+    .banner_area{
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .banner_area figure{
+        width: 90%;
+        margin: 0 auto 16px;
+    }
+    .banner_area figure:nth-of-type(3n){
+        margin: 0 auto 16px;
+    }
+
+    /*    .contribution
+    ----------------------------------*/
+    .contribution img{
+        width: 100%;
+        height: auto;
+    }
+    .contribution .row_area{
+        position: relative;
+        padding: 100px 0 40px;
+    }
+    .contribution h2{
+        width: 80px;
+    }
+
+    /*    .link
+    ----------------------------------*/
+    .link{
+        padding: 36px 0 36px;
+    }
+    .link ul{
+        flex-wrap: wrap;
+    }
+    .link li{
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+    .link li a{
+        font-size: 14px;
+        padding: 8px 0;
+    }
+
+}
